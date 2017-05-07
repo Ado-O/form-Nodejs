@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+        <h2>Node.js - MySql form</h2>
+      <form class="form" action="/" method="post" id="formM">
+           <!-- IME -->
+            <p class="field">
+                <input type="text" name="fname" id="fname" placeholder="50 karaktera" maxlength="50">
+                <label for="fname">Ime</label>
+            </p>
+            <!-- PREZIME -->
+            <p class="field">
+                <input type="text" name="lname" id="lname" placeholder="50 karaktera" maxlength="50">
+                <label for="lname">Prezime</label>
+            </p>
+            <!-- BROJ MOBITELA -->
+            <p class="field">
+                <input type="tel" name="mob" id="mob" placeholder="XXX|XXX-XXX">
+                <label for="mob">Broj Telefona</label>
+            </p>
+            <!-- GMAIL -->
+            <p class="field">
+                <input type="email" name="email" id="email" placeholder="aaa@bbb.ccc">
+                <label for="email">Email</label>
+            </p>
+            <!-- DRZAVE -->
+            <p class="locationState">
+                <select id="locationState">
+               <option >Izaberi drzavu</option>
+               <option id="state1">BiH</option>
+               <option id="state2">Srbija</option>
+               <option id="state3">Hrvatska</option>
+              <option id="state4">Other..</option>
+             </select>
+            </p>
+            <!-- GRADOVI -->
+            <p class="locationCity">
+                <select id="locationCity">
+               <option >Izaberi grad</option>
+            </select>
+            </p>
+            <!-- BUTTON SUBMIT -->
+            <p class="sub">
+                <input type="submit" name="sub" value="Send" id="submit" class="btn btn-primary btn-md">
+            </p>
+        </form>
+</div>
+    <br>
+    <hr>
+      <div class="container">
+         <table id="myTable" class="table table-sm table-inverse">
+                <thead style="background: #28cc90">
+                <tr>
+                    <th>#</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>mob</th>
+                    <th>gmail</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>...</th>
+                    <th>...</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+     <footer>
+        <div class="container">
+            <p>Simple Form with poor style, but the logic of Node.js (express), AJAX and MySQL.</p>
+                <p>You can look through code at this link
+                    <a href="https://github.com/Ado-O/Projekat---BasicFORM-">GitHub Link</a>           
+                Cover by Osijan Admir</p>
+        </div>
+    </footer>
+    <script type="text/javascript " src="./js/test.js "></script>
+    <script type="text/javascript" src="./js/build.js"></script>
+    <script type="text/javascript" src="./js/stateCity.js"></script>
+  
+</body>
+
+</html>
